@@ -10,7 +10,7 @@
  * 
  */
  class single {
- 	private static $_instance = null;
+    private static $_instance = null;
 	private function __construct() {
 		
 	}
@@ -19,7 +19,6 @@
 		if (null === self::$_instance) {
 			self::$_instance = new self;
 		}	
-		
 		return self::$_instance;
 	}
 	
