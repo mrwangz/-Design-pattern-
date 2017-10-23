@@ -10,7 +10,7 @@
  * 
  */
  class single {
-    private static $_instance = null;
+    protected static $_instance = null;
 	private function __construct() {
 		
 	}
