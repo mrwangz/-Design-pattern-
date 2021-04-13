@@ -28,5 +28,7 @@
  }
 
  class client {
- 	single::getInstance();
+    public function main() {
+        single::getInstance();
+    }
  }
