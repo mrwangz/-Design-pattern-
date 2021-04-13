@@ -34,7 +34,7 @@ class Factory {
     }
 }
 
-echo Factory::getInstance('a')->make()."/n";
-echo Factory::getInstance('b')->make()."/n";
-echo Factory::getInstance('c')->make()."/n";
+echo Factory::getInstance('a')->make()."<br>";
+echo Factory::getInstance('b')->make()."<br>";
+echo Factory::getInstance('c');
 
