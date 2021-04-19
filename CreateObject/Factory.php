@@ -1,12 +1,23 @@
 <?php
 /**
  * 2017-10-19
- * 工厂方法
- * 
+ * 简单工厂(静态工厂模式)
+ *
+ * 优点:
+ * 不需要直接去创建对象，只需要根据类型创建
+ * 调用简单
+ * 减少引入文件,增加灵活性
+ *
+ * 缺点:
+ * 添加新对对象需要修改工厂类,产品过多则不利于维护,不符合'开闭原则'
+ * 工厂模式使用类静态方法，无法被继承
  */
 
 abstract class Product {
-    abstract function make();
+    public function common() {
+        return 'common value';
+    }
+    abstract public function make();
 }
 
 class aProduct extends Product {
